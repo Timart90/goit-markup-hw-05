@@ -168,6 +168,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -215,6 +219,9 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -273,6 +280,10 @@ body {
   height: 56px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -434,6 +445,9 @@ body {
   width: 40px;
   height: 40px;
   background-color: var(--Iris-Primary-Brand);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -468,10 +482,17 @@ body {
   border: 1px solid var(--LIGHT-SLATE);
   border-radius: 4px;
   color: var(--LIGHT-SLATE);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
   fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -523,6 +544,10 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--CORNFLOWER);
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-btn:hover,
@@ -548,6 +573,9 @@ body {
 .img-link {
   display: block;
   text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-link:hover,
@@ -602,11 +630,13 @@ body {
   transition: transform 250ms;
 }
 
-.team-item:hover .overlay {
+.img-link:hover .overlay,
+.img-link:focus .overlay {
   transform: translateY(0);
 }
 
 .overlay-text {
+  position: absolute;
   color: var(--cloud-Light);
   font-weight: 400;
   font-size: 16px;
@@ -685,6 +715,10 @@ body {
   width: 40px;
   height: 40px;
   background-color: var(--Iris-Primary-Brand);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
