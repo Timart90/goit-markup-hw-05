@@ -162,7 +162,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 
-  color: var(--ocean);
+  color: var(--Navy-blue-Dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -179,6 +179,10 @@ body {
   color: var(--ocean);
 }
 
+.nav-link.active {
+  color: var(--ocean);
+}
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -188,7 +192,8 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--ocean);
+
+  /* background-color: var(--ocean); */
 }
 .nav-link.active::after {
   background-color: var(--ocean);
