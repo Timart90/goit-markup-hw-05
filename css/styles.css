@@ -779,6 +779,10 @@ body {
 .modal-close-btn:focus {
   background-color: var(--ocean);
   border: none;
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
   fill: var(--White-background);
 }
 
@@ -787,13 +791,4 @@ body {
   transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: var(--White-background);
-}
-
-.open-modal:hover {
-  opacity: 0.8;
 }
